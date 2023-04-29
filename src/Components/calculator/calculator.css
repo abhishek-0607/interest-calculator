@@ -1,0 +1,122 @@
+.app {
+  color: white;
+  background: #0b0d22;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px;
+  margin-top: 80px;
+  width: 1310px;
+  height: 920px;
+  margin: auto;
+  background-color: #111535;
+}
+.container {
+  background-color: #111535;
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 2px solid red; */
+  flex-direction: row;
+  width: 100%;
+  /* height: 90vh; */
+  margin: 30px auto 0;
+  gap: 50px;
+}
+.left {
+  flex: 1;
+  /* border: 1px solid rgb(255, 255, 255); */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 35px;
+  position: relative;
+}
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 23px;
+  align-items: center;
+  letter-spacing: -0.02em;
+}
+.input {
+  border: 1px solid #8c8f9f;
+  border-radius: 8px;
+  width: 50%;
+
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+
+  color: #24feee;
+  align-items: center;
+}
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+.inputBox {
+  /* border: none;
+    border-radius: 3px; */
+  background-color: #111535;
+  font-size: 24px;
+  width: 50%;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  outline: none;
+}
+
+.slideContainer {
+  width: 100%;
+  background-color: #111535;
+}
+.range {
+  width: 100%;
+  /* border: 1px solid black; */
+  background-color: #111535;
+}
+.interestRate {
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid rgb(255, 255, 255); */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  letter-spacing: -0.02em;
+}
+.interestRate > div {
+  flex: 1;
+}
+
+.monthlyInterest {
+  border: 1px solid #6371ff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 7px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.monthlyInterest > div:first-child {
+  flex: 4;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+.monthlyInterest > div:last-child {
+  flex: 1;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+}
+.logo2 {
+  font-size: 29px;
+  font-weight: 600;
+  margin-top: 2px;
+  margin-right: 4px;
+}
