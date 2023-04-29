@@ -2,6 +2,7 @@ import { faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./calculator.css";
 import React, { useState } from "react";
+import DoughnutChart from "../DoughnutChart";
 
 export const Calculator = () => {
   const [amount, setAmount] = useState(25000);
@@ -65,7 +66,11 @@ export const Calculator = () => {
             </div>
           </div>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <div className="chartChild">
+            <DoughnutChart amount={amount} />
+          </div>
+        </div>
       </div>
     </div>
   );
