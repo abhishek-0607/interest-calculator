@@ -3,6 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./calculator.css";
 import React, { useState } from "react";
 import DoughnutChart from "../DoughnutChart";
+import Chart from "chart.js/auto";
+import { CategoryScale } from "chart.js";
+Chart.register(CategoryScale);
 
 export const Calculator = () => {
   const [amount, setAmount] = useState(25000);
