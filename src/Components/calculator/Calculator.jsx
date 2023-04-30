@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./calculator.css";
 import "./rangeInput.css";
 import DoughnutChart from "../DoughnutChart";
@@ -9,9 +9,17 @@ import { faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
 Chart.register(CategoryScale);
 
 export const Calculator = () => {
+  const [inputAmount, setInputAmount] = useState(25000);
   const [amount, setAmount] = useState(25000);
-  const handleInputChange = (e) => setAmount(Number(e.target.value));
-  const handleRangeChange = (e) => setAmount(e.target.value);
+  const handleInputChange = (e) => setInputAmount(Number(e.target.value));
+  const handleRangeChange = (e) => setInputAmount(e.target.value);
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      setAmount(inputAmount);
+    }, 1000);
+
+    return () => clearTimeout(delay);
+  }, [inputAmount]);
   return (
     <div className="calculator">
       <div className="mainTitle">
@@ -30,7 +38,7 @@ export const Calculator = () => {
                 type="number"
                 min={25000}
                 max={500000}
-                value={amount}
+                value={inputAmount}
                 onChange={handleInputChange}
               />
             </div>
@@ -41,7 +49,7 @@ export const Calculator = () => {
               type="range"
               min={25000}
               max={500000}
-              value={amount}
+              value={inputAmount}
               onChange={handleRangeChange}
             />
           </div>
@@ -59,17 +67,6 @@ export const Calculator = () => {
             </div>
             <div>
               <span>12 months</span>
-            </div>
-          </div>
-          <div className="monthlyInterest">
-            <div>
-              <span>Monthly Interest</span>
-            </div>
-            <div>
-              <span className="logo2">
-                <FontAwesomeIcon icon={faIndianRupeeSign} />
-              </span>
-              <span>{Math.ceil(amount * 0.01)}</span>
             </div>
           </div>
         </div>
@@ -109,6 +106,18 @@ export const Calculator = () => {
             </div>
           </div>
           {/* <div className="interestChild"></div> */}
+        </div>
+
+        <div className="monthlyInterest">
+          <div>
+            <span>Monthly Interest Payment</span>
+          </div>
+          <div>
+            <span className="logo2">
+              <FontAwesomeIcon icon={faIndianRupeeSign} />
+            </span>
+            <span>{Math.ceil(amount * 0.01)}</span>
+          </div>
         </div>
       </div>
       <div className="buttonBox">
