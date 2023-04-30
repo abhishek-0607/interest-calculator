@@ -23,17 +23,18 @@
   background-color: #111535;
   display: flex;
   justify-content: space-between;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   flex-direction: row;
   width: 100%;
   /* height: 90vh; */
   /* margin: 30px auto 0; */
   gap: 50px;
   padding: 40px;
+  position: relative;
 }
 .left {
   flex: 1;
-  border: 1px solid rgb(255, 255, 255);
+  /* border: 1px solid white; */
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -107,8 +108,8 @@
   align-items: center;
   padding: 10px 7px;
   position: absolute;
-  bottom: 0;
-  width: 100%;
+  bottom: 6%;
+  width: 44.5%;
 }
 .monthlyInterest > div:first-child {
   flex: 3.5;
@@ -131,16 +132,18 @@
 }
 .right {
   flex: 1;
-  border: 1px solid rgb(255, 255, 255);
+  /* border: 1px solid white; */
   display: flex;
   flex-direction: column;
   position: relative;
   align-items: center;
 }
-
 .chartChild {
+  width: 300px;
+  height: 300px;
   margin-bottom: 40px;
 }
+
 .details {
   display: flex;
   flex-direction: column;
@@ -217,4 +220,120 @@
   margin-top: 2px;
   margin-left: 8px;
   align-items: center;
+}
+
+/* CSS for mobile view  */
+@media only screen and (max-width: 390px) {
+  .calculator {
+    padding: 10px;
+    width: 94%;
+    height: auto;
+  }
+
+  .mainTitle {
+    font-size: 28px;
+    padding: 10px 0;
+  }
+
+  .container {
+    border: none;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .left {
+    border: none;
+    gap: 15px;
+    position: relative;
+  }
+
+  .inputContainer {
+    font-size: 19px;
+  }
+
+  .input {
+    font-size: 18px;
+    width: 40%;
+  }
+
+  .inputBox {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .interestRate {
+    font-size: 20px;
+    width: 100%;
+  }
+  .interestRate > div:first-child {
+    font-weight: 600;
+    font-size: 16px;
+    flex: 1;
+  }
+  .interestRate > div:last-child {
+    font-weight: 600;
+    font-size: 20px;
+    flex: 1.2;
+  }
+  .monthlyInterest {
+    position: absolute;
+    bottom: -15%;
+    width: 95%;
+    gap: 30px;
+  }
+  .monthlyInterest > div:first-child {
+    font-size: 18px;
+    flex: 1.7;
+  }
+
+  .monthlyInterest > div:last-child {
+    font-size: 28px;
+    flex: 1;
+  }
+
+  .logo2 {
+    font-size: 24px;
+  }
+
+  .right {
+    border: none;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid rgb(255, 255, 255); */
+    width: 100%;
+    gap: 10px;
+  }
+  .chartChild {
+    width: 160px;
+    height: 160px;
+  }
+
+  .detailsChild {
+    gap: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .amount {
+    font-size: 28px;
+  }
+
+  .logo3 {
+    font-size: 24px;
+  }
+
+  .buttonBox {
+    margin-top: 100px;
+    padding: 20px 0;
+  }
+
+  .button {
+    padding: 10px 30px;
+    font-size: 20px;
+  }
 }
