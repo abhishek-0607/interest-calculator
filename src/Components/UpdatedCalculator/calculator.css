@@ -1,0 +1,392 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 1310px;
+  height: 920px;
+  /* border: 1px solid red; */
+  background-color: #111535;
+  margin: 80px auto;
+}
+.mainTitle {
+  /* border: 1px solid greenyellow; */
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 33px;
+  color: #24feee;
+}
+.container {
+  /* border: 2px solid red; */
+  background-color: #111535;
+  display: flex;
+  justify-content: space-evenly;
+
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  /* padding: 0 80px; */
+  margin-top: 80px;
+  gap: 120px;
+  position: relative;
+}
+.left {
+  width: 450px;
+  /* border: 1px solid greenyellow; */
+  display: flex;
+  flex-direction: column;
+}
+.inputContainer {
+  /* border: 1px solid greenyellow; */
+  display: flex;
+  font-weight: 600;
+  font-size: 23px;
+  align-items: center;
+  letter-spacing: -0.02em;
+}
+.inputTitle {
+  /* border: 1px solid greenyellow; */
+  margin-right: 60px;
+  width: 150px;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 28px;
+}
+.input {
+  border: 1px solid #8c8f9f;
+  border-radius: 8px;
+  width: 218px;
+  padding: 15.5px 12px;
+  display: flex;
+
+  color: #24feee;
+  align-items: center;
+}
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 2px;
+  margin-right: 2px;
+}
+.inputBox {
+  border: none;
+  color: #24feee;
+  background-color: #111535;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 23px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  outline: none;
+}
+.inputBox::-webkit-outer-spin-button,
+.inputBox::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.slideContainer {
+  /* border: 1px solid greenyellow; */
+  margin-top: 20px;
+  width: 100%;
+  height: 20px;
+  background-color: #111535;
+}
+.range {
+  width: 100%;
+  /* border: 1px solid black; */
+  background-color: #111535;
+}
+.interestRate {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-around;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  letter-spacing: -0.02em;
+}
+.interestRateChild1 {
+  margin-right: 60px;
+  width: 150px;
+}
+.interestRateChild2 {
+  width: 240px;
+}
+
+.monthlyInterest {
+  box-sizing: border-box;
+  width: 450px;
+  height: 100px;
+  border: 1px solid #6371ff;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 95px;
+}
+.monthlyInterest > div:first-child {
+  flex: 3;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.monthlyInterest > div:last-child {
+  flex: 1;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  color: #828dff;
+}
+.logo2 {
+  font-size: 29px;
+  font-weight: 600;
+  /* margin-top: 2px;
+  margin-right: 4px; */
+}
+.right {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chartChild {
+}
+.details {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+.detailsChild {
+  /* box-sizing: border-box;
+  border: 1px solid white; */
+  padding: 10px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dot {
+  flex: 0.5;
+}
+.greenDot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #24feee;
+}
+.blueDot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #828dff;
+}
+.title {
+  flex: 2.1;
+  font-weight: 400;
+  font-size: 20px;
+}
+.amount {
+  flex: 1;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid skyblue; */
+}
+.logo3 {
+  font-size: 29px;
+  font-weight: 600;
+  margin-top: 2px;
+  margin-right: 4px;
+}
+
+.buttonBox {
+  /* border: 1px solid greenyellow; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  /* border: 1px solid red; */
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 60px;
+  font-weight: 600;
+  font-size: 24px;
+
+  background-color: #24feee;
+  border-radius: 8px;
+  color: #0b0d22;
+  border-radius: 60px;
+}
+.logo4 {
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 2px;
+  margin-left: 8px;
+  align-items: center;
+}
+
+/* CSS for mobile view  */
+@media only screen and (max-width: 390px) {
+  .calculator {
+    width: 342px;
+    height: 790px;
+  }
+
+  .mainTitle {
+    height: 80px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  .container {
+    margin-top: 0px;
+    width: 342px;
+    height: 710px;
+    border: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .left {
+    width: 294px;
+    height: 196px;
+    border: none;
+  }
+
+  .inputContainer {
+    width: 100%;
+    font-size: 19px;
+    justify-content: space-between;
+  }
+  .inputTitle {
+    width: 150px;
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .input {
+    font-size: 18px;
+    width: 30%;
+  }
+
+  .inputBox {
+    font-size: 20px;
+    width: 100%;
+  }
+  .slideContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .interestRate {
+    /* border: 1px solid rgb(255, 255, 255); */
+    margin-top: 20px;
+    font-size: 20px;
+    width: 100%;
+  }
+  .interestRateChild1 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 10px;
+    width: 115px;
+  }
+  .interestRateChild2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    width: 160px;
+  }
+  .monthlyInterest {
+    position: absolute;
+    bottom: -18%;
+    width: 294px;
+    height: 76px;
+    left: 24px;
+    margin-top: 20px;
+    /* bottom: 0; */
+  }
+  .monthlyInterest > div:first-child {
+    font-size: 18px;
+    flex: 1.7;
+  }
+
+  .monthlyInterest > div:last-child {
+    font-size: 28px;
+    flex: 1;
+  }
+
+  .logo2 {
+    font-size: 24px;
+  }
+
+  .right {
+    border: none;
+    width: 294px;
+  }
+  .chartChild {
+    width: 160px;
+    height: 160px;
+  }
+  .details {
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid rgb(255, 255, 255); */
+    width: 100%;
+    gap: 0px;
+  }
+
+  .detailsChild {
+    gap: 10px;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .amount {
+    font-weight: 600;
+    font-size: 23px;
+  }
+
+  .logo3 {
+    font-size: 20px;
+  }
+
+  .buttonBox {
+    margin-top: 100px;
+    padding: 20px 0;
+  }
+
+  .button {
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+}
